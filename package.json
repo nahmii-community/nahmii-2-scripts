@@ -10,6 +10,7 @@
     "hardhat": "^2.7.1"
   },
   "dependencies": {
+    "@eth-optimism/hardhat-ovm": "^0.2.4",
     "@nahmii/message-relayer": "^0.1.9"
   }
 }

@@ -5,6 +5,18 @@ __metadata:
   version: 5
   cacheKey: 8
 
+"@eth-optimism/hardhat-ovm@npm:^0.2.4":
+  version: 0.2.4
+  resolution: "@eth-optimism/hardhat-ovm@npm:0.2.4"
+  dependencies:
+    node-fetch: ^2.6.1
+  peerDependencies:
+    ethers: ^5.4.5
+    hardhat: ^2.3.0
+  checksum: 602acf597470ac7fb4b8adc03cdb55c0de0457945ce0bbcc23d4458b70072775a7dd32b9e84460feea8ef00d562b9e64986a1dd87c5a16c783b5dbfa435bcae5
+  languageName: node
+  linkType: hard
+
 "@ethereumjs/block@npm:^3.5.0, @ethereumjs/block@npm:^3.6.0":
   version: 3.6.0
   resolution: "@ethereumjs/block@npm:3.6.0"
@@ -3910,6 +3922,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "nahmii-examples-scripts@workspace:."
   dependencies:
+    "@eth-optimism/hardhat-ovm": ^0.2.4
     "@nahmii/contracts": ^0.5.0
     "@nahmii/core-utils": ^0.5.2
     "@nahmii/message-relayer": ^0.1.9
@@ -3989,7 +4002,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"node-fetch@npm:^2.6.0":
+"node-fetch@npm:^2.6.0, node-fetch@npm:^2.6.1":
   version: 2.6.6
   resolution: "node-fetch@npm:2.6.6"
   dependencies:
