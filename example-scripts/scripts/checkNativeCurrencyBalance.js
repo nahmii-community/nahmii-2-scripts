@@ -20,7 +20,7 @@ async function main() {
         l2Wallet = new ethers.Wallet(key, l2RpcProvider)
     }
 
-    // Initial balances.
+    // Log native currency balances for L1 and L2 for a given address or wallet.
     console.log(`Balance on L1: ${await l1RpcProvider.getBalance(l1Wallet.address)}`)
     console.log(`Balance on L2: ${await l2RpcProvider.getBalance(l2Wallet.address)}`)
 }
