@@ -9,7 +9,7 @@ async function main() {
 
     // Retrieve the whitelist address interface and construct an Ethers Contract around it.
     const DeployerWhitelist = new ethers.Contract(
-        '0x4200000000000000000000000000000000000002',
+        '0x4200000000000000000000000000000000000002', // Deployer whitelist address.
         getContractInterface('NVM_DeployerWhitelist'),
         l2RpcProvider
     )

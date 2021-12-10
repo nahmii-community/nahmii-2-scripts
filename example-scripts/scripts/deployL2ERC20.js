@@ -18,7 +18,7 @@ async function main() {
   // Deploy the paired ERC20 token to L2.
   console.log('Deploying L2 ERC20...')
   const L2_ERC20 = await factory__L2_ERC20.connect(l2Wallet).deploy(
-    '0x4200000000000000000000000000000000000010',
+    '0x4200000000000000000000000000000000000010', // L2 standard bridge address.
     // Use this (\/) value to check what happens when the L1 ERC20 address is invalid
     // '0x1111111111000000000000000000000000000000',
     // Use this (\/) value to check what happens when the L1 ERC20 address is valid
