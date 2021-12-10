@@ -1,0 +1,22 @@
+const ethers = require('ethers')
+const { getContractInterface } = require('@nahmii/contracts')
+const { networks } = require('../utils/networks');
+
+async function main() {
+    const l2RpcProvider = new ethers.providers.JsonRpcProvider(networks.mainnet.l2)
+
+    const DeployerWhitelist = new ethers.Contract(
+        '0x4200000000000000000000000000000000000002',
+        getContractInterface('NVM_DeployerWhitelist'),
+        l2RpcProvider
+    )
+
+    console.log(`Allow Arbitrary Deployments: ${await DeployerWhitelist.allowArbitraryDeployment()}`)
+}
+
+main()
+    .then(() => process.exit(0))
+    .catch(error => {
+        console.error(error)
+        process.exit(1)
+    })
