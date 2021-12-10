@@ -3,7 +3,7 @@ const networks = {
         l1: 'https://l1.nahmii.io',
         l2: 'https://l2.nahmii.io/'
     },
-    ropsten: {
+    testnet: {
         l1: 'https://l1.testnet.nahmii.io',
         l2: 'https://l2.testnet.nahmii.io/'
     },
