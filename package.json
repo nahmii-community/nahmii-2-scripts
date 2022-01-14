@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@eth-optimism/hardhat-ovm": "^0.2.4",
-    "@nahmii/message-relayer": "^0.1.9"
+    "@nahmii/message-relayer": "^0.1.9",
+    "@nahmii/sdk": "^0.0.3"
   }
 }
