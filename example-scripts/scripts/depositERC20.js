@@ -22,7 +22,7 @@ async function main() {
   // Deploy the paired ERC20 token to L2.
   console.log('Depositing ERC20 token...')
 
-  // Deposit Ether into Nahmii 2.0
+  // Deposit ERC20 into Nahmii 2.0
   const transaction = await depositERC20(
       l1TokenAddress,
       l2TokenAddress,
